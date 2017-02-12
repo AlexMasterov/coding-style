@@ -43,5 +43,5 @@ return \PhpCsFixer\Config::create()
     ->setHideProgress(true)
     ->setPhpExecutable('php')
     ->setUsingCache(true)
-    ->setCacheFile(__DIR__.'/.cache/.phpcs')
+    ->setCacheFile(sys_get_temp_dir().'/.phpcs')
     ;
