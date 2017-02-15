@@ -1,6 +1,8 @@
 let config = {
-  use: ['stylefmt'],
-  stylefmt: require('./stylefmt')
+  use: []
 };
+
+config = require('./postcss/stylefmt')(config);
+config = require('./postcss/sorting')(config);
 
 module.exports = config;
