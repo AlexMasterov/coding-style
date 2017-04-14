@@ -4,7 +4,7 @@ let config = {
     es6: true,
     node: true,
     browser: true,
-    commonjs: true
+    commonjs: true,
   },
 
   parser: 'babel-eslint',
@@ -14,12 +14,12 @@ let config = {
     ecmaFeatures: {
       arrowFunctions: true,
       experimentalObjectRestSpread: true,
-      impliedStrict: true
-    }
+      impliedStrict: true,
+    },
   },
 
   plugins: [],
-  rules: {}
+  rules: {},
 };
 
 // Rules

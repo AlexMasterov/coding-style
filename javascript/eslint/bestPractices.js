@@ -8,20 +8,20 @@ const rules = {
     exceptions: {
       Property: false,
       VariableDeclarator: true,
-      ImportDeclaration: true
-    }
+      ImportDeclaration: true,
+    },
   }],
   'block-scoped-var': WARNING,
   'complexity': [WARNING, 40],
   'curly': [WARNING, 'multi-line'],
   'default-case': WARNING,
   'dot-notation': [ERROR, {
-    allowKeywords: true
+    allowKeywords: true,
   }],
   'eqeqeq': WARNING,
   'guard-for-in': WARNING,
   'no-alert': ERROR,
-  'no-with': WARNING
+  'no-with': WARNING,
 };
 
 // http://eslint.org/docs/rules/#best-practices

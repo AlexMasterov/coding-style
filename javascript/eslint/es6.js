@@ -6,16 +6,20 @@ const rules = {
   'arrow-parens': [ERROR, 'always'],
   'arrow-spacing': [ERROR, {
     before: true,
-    after: true
+    after: true,
   }],
   'no-var': WARNING,
   'no-useless-rename': ERROR,
+  'prefer-const': [ERROR, {
+    destructuring: 'any',
+    ignoreReadBeforeAssign: false,
+  }],
   'rest-spread-spacing': [ERROR, 'never'],
   'generator-star-spacing': [ERROR, {
     before: false,
-    after: true
+    after: true,
   }],
-  'yield-star-spacing': [ERROR, 'after']
+  'yield-star-spacing': [ERROR, 'after'],
 };
 
 // http://eslint.org/docs/rules/#ecmascript-6

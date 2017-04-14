@@ -3,9 +3,9 @@ const WARNING = 1;
 const ERROR = 2;
 
 const rules = {
-  'comma-dangle': [ERROR, 'never'],
+  'comma-dangle': [ERROR, 'always-multiline'],
   'indent': [WARNING, 2, {
-    SwitchCase: 1
+    SwitchCase: 1,
   }],
   'jsx-quotes': [ERROR, 'prefer-single'],
   'semi': [ERROR, 'always'],
@@ -14,21 +14,21 @@ const rules = {
   'block-spacing': [ERROR, 'always'],
   'padded-blocks': [ERROR, {
     switches: 'never',
-    classes: 'never'
+    classes: 'never',
   }],
   'no-trailing-spaces': ERROR,
   'func-call-spacing': [ERROR, 'never'],
   'key-spacing': [ERROR, {
-    afterColon: true
+    afterColon: true,
   }],
   'keyword-spacing': [ERROR, {
     before: true,
-    after: true
+    after: true,
   }],
   'object-curly-spacing': [ERROR, 'always'],
   'no-whitespace-before-property': ERROR,
   'space-before-function-paren': [ERROR, 'never'],
-  'computed-property-spacing': [WARNING, 'never']
+  'computed-property-spacing': [WARNING, 'never'],
 };
 
 // http://eslint.org/docs/rules/#stylistic-issues
