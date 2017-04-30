@@ -1,7 +1,10 @@
 let config = {
-  use: []
+  map: false,
+  syntax: 'sugarss',
+  plugins: [],
 };
 
+// Plugins
 config = require('./postcss/stylefmt')(config);
 config = require('./postcss/sorting')(config);
 

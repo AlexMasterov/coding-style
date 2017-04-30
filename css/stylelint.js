@@ -1,7 +1,8 @@
 let config = {
-  rules: {}
+  rules: {},
 };
 
+// Rules
 config = require('./stylelint/color')(config);
 config = require('./stylelint/atRule')(config);
 config = require('./stylelint/sheet')(config);

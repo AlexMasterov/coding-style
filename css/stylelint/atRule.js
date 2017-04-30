@@ -2,11 +2,11 @@ const rules = {
   'at-rule-empty-line-before': ['always', {
     except: [
       'blockless-after-same-name-blockless',
-      'first-nested'
+      'first-nested',
     ],
-    ignore: ['after-comment']
+    ignore: ['after-comment'],
   }],
-  'at-rule-name-case': 'lower'
+  'at-rule-name-case': 'lower',
 };
 
 // https://stylelint.io/user-guide/rules/#at-rule

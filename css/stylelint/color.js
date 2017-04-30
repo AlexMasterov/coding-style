@@ -1,5 +1,5 @@
 const rules = {
-  'color-hex-case': 'upper'
+  'color-hex-case': 'upper',
 };
 
 // https://stylelint.io/user-guide/rules/#color

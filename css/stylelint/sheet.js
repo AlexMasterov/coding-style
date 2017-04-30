@@ -1,5 +1,5 @@
 const rules = {
-  'indentation': [2]
+  'indentation': [2],
 };
 
 // https://stylelint.io/user-guide/rules/#general--sheet

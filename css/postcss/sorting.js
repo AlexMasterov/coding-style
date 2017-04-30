@@ -1,14 +1,14 @@
 const rules = {
-  'properties-order': 'alphabetical'
+  'properties-order': 'alphabetical',
 };
 
 module.exports = (config) => {
-  config.use = [
-    ...config.use,
-    'postcss-sorting'
-  ];
-
-  config['postcss-sorting'] = rules;
+  config.plugins = Object.assign({},
+    config.plugins,
+    {
+      'postcss-sorting': { rules },
+    }
+  );
 
   return config;
 };
