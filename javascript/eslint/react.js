@@ -8,7 +8,9 @@ const rules = {
     allowMultiline: false,
   }],
   'react/jsx-equals-spacing': [ERROR, 'never'],
-  'react/jsx-space-before-closing': [ERROR, 'always'],
+  'react/jsx-tag-spacing': [ERROR, {
+    beforeSelfClosing: 'always',
+  }],
   'react/jsx-closing-bracket-location': [ERROR, 'line-aligned'],
   'react/self-closing-comp': [ERROR, {
     component: true,
