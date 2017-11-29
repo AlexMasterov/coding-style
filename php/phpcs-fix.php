@@ -3,8 +3,10 @@
 static $rules = [
     '@PSR2'                                       => true,
     'single_import_per_statement'                 => false,
+    'single_line_comment_style'                   => true,
     'array_syntax'                                => ['syntax' => 'short'],
     'class_definition'                            => ['singleLine' => true],
+    'class_keyword_remove'                        => false,
     'concat_space'                                => ['spacing' => 'one'],
     'function_typehint_space'                     => true,
     'hash_to_slash_comment'                       => true,
@@ -23,11 +25,11 @@ static $rules = [
     'no_singleline_whitespace_before_semicolons'  => true,
     'no_spaces_around_offset'                     => true,
     'ordered_imports'                             => true,
-    'trailing_comma_in_multiline_array'           => true,
-    'trim_array_spaces'                           => true,
     'pre_increment'                               => true,
     'short_scalar_cast'                           => true,
     'single_quote'                                => true,
+    'trailing_comma_in_multiline_array'           => true,
+    'trim_array_spaces'                           => true,
     'no_extra_consecutive_blank_lines'            => [
         'tokens' => [
             'curly_brace_block',
@@ -45,14 +47,29 @@ static $rules = [
             'constant_protected',
             'constant_private',
             'property_public',
-            'method_public',
             'property_protected',
-            'method_protected',
             'property_private',
+            'method_public',
+            'method_protected',
             'method_private',
         ],
     ],
 ];
+
+// $rules['ordered_class_elements'] = [
+//     'order' => [
+//         'use_trait',
+//         'constant_public',
+//         'constant_protected',
+//         'constant_private',
+//         'property_public',
+//         'method_public',
+//         'property_protected',
+//         'method_protected',
+//         'property_private',
+//         'method_private',
+//     ],
+// ];
 
 // php-cs-fixer fix --quiet --config=phpcs-fix.php
 return \PhpCsFixer\Config::create()
