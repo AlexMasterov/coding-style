@@ -3,6 +3,7 @@ const WARNING = 1;
 const ERROR = 2;
 
 const rules = {
+  'array-bracket-spacing': [ERROR, 'never'],
   'comma-dangle': [ERROR, 'always-multiline'],
   'indent': [WARNING, 2, {
     SwitchCase: 1,
