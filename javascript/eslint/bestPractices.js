@@ -12,9 +12,9 @@ const rules = {
     },
   }],
   'block-scoped-var': WARNING,
-  'complexity': [WARNING, 40],
+  'complexity': [OFF, 40],
   'curly': [WARNING, 'multi-line'],
-  'default-case': WARNING,
+  'default-case': OFF,
   'dot-notation': [ERROR, {
     allowKeywords: true,
   }],
