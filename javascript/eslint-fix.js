@@ -13,7 +13,6 @@ let config = {
     ecmaVersion: 7,
     ecmaFeatures: {
       arrowFunctions: true,
-      experimentalObjectRestSpread: true,
       impliedStrict: true,
     },
   },

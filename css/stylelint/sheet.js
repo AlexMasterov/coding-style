@@ -4,6 +4,6 @@ const rules = {
 
 // https://stylelint.io/user-guide/rules/#general--sheet
 module.exports = (config) => {
-  config.rules = Object.assign({}, config.rules, rules);
+  config.rules = { ...config.rules, ...rules };
   return config;
 };

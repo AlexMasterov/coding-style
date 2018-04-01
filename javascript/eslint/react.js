@@ -20,19 +20,11 @@ const rules = {
 
 // https://github.com/yannickcr/eslint-plugin-react#list-of-supported-rules
 module.exports = (config) => {
-  config.parserOptions.ecmaFeatures = Object.assign({},
-    config.parserOptions.ecmaFeatures,
-    {
-      jsx: true,
-    }
-  );
+  config.parserOptions.ecmaFeatures =
+    { ...config.parserOptions.ecmaFeatures, ...{ jsx: true } };
 
-  config.plugins = [
-    ...config.plugins,
-    'react',
-  ];
-
-  config.rules = Object.assign({}, config.rules, rules);
+  config.plugins = [...config.plugins, 'react'];
+  config.rules = { ...config.rules, ...rules };
 
   return config;
 };

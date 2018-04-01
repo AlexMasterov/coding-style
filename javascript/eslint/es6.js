@@ -16,14 +16,14 @@ const rules = {
   }],
   'rest-spread-spacing': [ERROR, 'never'],
   'generator-star-spacing': [ERROR, {
-    before: false,
-    after: true,
+    before: true,
+    after: false,
   }],
   'yield-star-spacing': [ERROR, 'after'],
 };
 
 // http://eslint.org/docs/rules/#ecmascript-6
 module.exports = (config) => {
-  config.rules = Object.assign({}, config.rules, rules);
+  config.rules = { ...config.rules, ...rules };
   return config;
 };

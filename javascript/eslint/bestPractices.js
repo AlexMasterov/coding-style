@@ -26,6 +26,6 @@ const rules = {
 
 // http://eslint.org/docs/rules/#best-practices
 module.exports = (config) => {
-  config.rules = Object.assign({}, config.rules, rules);
+  config.rules = { ...config.rules, ...rules };
   return config;
 };
