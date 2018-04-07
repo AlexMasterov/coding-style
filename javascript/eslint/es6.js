@@ -16,8 +16,8 @@ const rules = {
   }],
   'rest-spread-spacing': [ERROR, 'never'],
   'generator-star-spacing': [ERROR, {
-    before: true,
-    after: false,
+    before: false,
+    after: true,
   }],
   'yield-star-spacing': [ERROR, 'after'],
 };
