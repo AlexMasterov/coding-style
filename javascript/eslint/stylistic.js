@@ -28,7 +28,11 @@ const rules = {
   }],
   'object-curly-spacing': [ERROR, 'always'],
   'no-whitespace-before-property': ERROR,
-  'space-before-function-paren': [ERROR, 'never'],
+  'space-before-function-paren': [ERROR, {
+    anonymous: 'always',
+    asyncArrow: 'always'
+    named: 'never',
+  }],
   'computed-property-spacing': [WARNING, 'never'],
 };
 
