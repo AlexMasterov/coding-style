@@ -30,7 +30,7 @@ const rules = {
   'no-whitespace-before-property': ERROR,
   'space-before-function-paren': [ERROR, {
     anonymous: 'always',
-    asyncArrow: 'always'
+    asyncArrow: 'always',
     named: 'never',
   }],
   'computed-property-spacing': [WARNING, 'never'],
