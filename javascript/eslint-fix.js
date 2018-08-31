@@ -25,6 +25,7 @@ let config = {
 config = require('./eslint/es6')(config);
 config = require('./eslint/stylistic')(config);
 config = require('./eslint/bestPractices')(config);
+config = require('./eslint/possibleErrors')(config);
 
 // Plugins
 config = require('./eslint/react')(config);

@@ -3,7 +3,7 @@ const WARNING = 1;
 const ERROR = 2;
 
 const rules = {
-  'arrow-parens': [ERROR, 'always'],
+  'arrow-parens': [ERROR, 'as-needed'],
   'arrow-spacing': [ERROR, {
     before: true,
     after: true,
