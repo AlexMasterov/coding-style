@@ -1,5 +1,6 @@
-let config = {
+module.exports = {
   root: false,
+
   env: {
     es6: true,
     node: true,
@@ -7,27 +8,20 @@ let config = {
     commonjs: true,
   },
 
-  parser: 'babel-eslint',
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 7,
+    ecmaVersion: 8,
     ecmaFeatures: {
       arrowFunctions: true,
       impliedStrict: true,
     },
   },
 
-  plugins: [],
-  rules: {},
+  extends: [
+    './eslint/es6.js',
+    './eslint/stylistic.js',
+    './eslint/bestPractices.js',
+    './eslint/possibleErrors.js',
+    // './eslint/react.js',
+  ],
 };
-
-// Rules
-config = require('./eslint/es6')(config);
-config = require('./eslint/stylistic')(config);
-config = require('./eslint/bestPractices')(config);
-config = require('./eslint/possibleErrors')(config);
-
-// Plugins
-config = require('./eslint/react')(config);
-
-module.exports = config;
