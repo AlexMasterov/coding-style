@@ -10,6 +10,8 @@ module.exports = {
     },
   },
 
+  plugins: ['react'],
+
   rules: {
     'react/jsx-indent-props': [ERROR, 2],
     'react/jsx-curly-spacing': [ERROR, 'never', {
