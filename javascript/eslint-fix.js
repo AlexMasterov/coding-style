@@ -22,6 +22,6 @@ module.exports = {
     './eslint/stylistic.js',
     './eslint/bestPractices.js',
     './eslint/possibleErrors.js',
-    // './eslint/react.js',
+    './eslint/react.js',
   ],
 };
