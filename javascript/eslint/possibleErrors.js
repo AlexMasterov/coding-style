@@ -6,5 +6,5 @@ const ERROR = 2;
 module.exports = {
   rules: {
     'require-atomic-updates': ERROR,
-  }
+  },
 };

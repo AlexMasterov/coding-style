@@ -22,5 +22,5 @@ module.exports = {
       after: true,
     }],
     'yield-star-spacing': [ERROR, 'after'],
-  }
+  },
 };

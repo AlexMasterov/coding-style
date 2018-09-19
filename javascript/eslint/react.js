@@ -26,5 +26,5 @@ module.exports = {
       component: true,
       html: true,
     }],
-  }
+  },
 };

@@ -24,5 +24,5 @@ module.exports = {
     'guard-for-in': WARNING,
     'no-alert': ERROR,
     'no-with': WARNING,
-  }
+  },
 };

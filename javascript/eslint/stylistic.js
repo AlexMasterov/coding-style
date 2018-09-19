@@ -14,6 +14,7 @@ module.exports = {
     'semi': [ERROR, 'always'],
     'semi-spacing': ERROR,
     'eol-last': [ERROR, 'unix'],
+    'linebreak-style': [ERROR, 'unix'],
     'block-spacing': [ERROR, 'always'],
     'padded-blocks': [ERROR, {
       switches: 'never',
@@ -36,5 +37,5 @@ module.exports = {
       named: 'never',
     }],
     'computed-property-spacing': [WARNING, 'never'],
-  }
+  },
 };
