@@ -5,7 +5,7 @@ const ERROR = 2;
 // http://eslint.org/docs/rules/#ecmascript-6
 module.exports = {
   rules: {
-    'arrow-parens': [ERROR, 'as-needed'],
+    'arrow-parens': [WARNING, 'as-needed'],
     'arrow-spacing': [ERROR, {
       before: true,
       after: true,
