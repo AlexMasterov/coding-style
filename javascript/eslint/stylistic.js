@@ -13,8 +13,8 @@ module.exports = {
     'jsx-quotes': [ERROR, 'prefer-single'],
     'semi': [WARNING, 'always'],
     'semi-spacing': ERROR,
-    'eol-last': [WARNING, 'unix'],
-    'linebreak-style': [ERROR, 'unix'],
+    'eol-last': [OFF, 'unix'],
+    'linebreak-style': [OFF, 'unix'],
     'block-spacing': [ERROR, 'always'],
     'padded-blocks': [ERROR, {
       switches: 'never',

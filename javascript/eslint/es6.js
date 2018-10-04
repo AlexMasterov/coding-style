@@ -12,7 +12,7 @@ module.exports = {
     }],
     'no-var': WARNING,
     'no-useless-rename': ERROR,
-    'prefer-const': [ERROR, {
+    'prefer-const': [WARNING, {
       destructuring: 'any',
       ignoreReadBeforeAssign: false,
     }],
